@@ -1,0 +1,44 @@
+[
+  {
+    "epoch": 1,
+    "step": 8,
+    "training_loss": 3.631012501923934,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 2,
+    "step": 16,
+    "training_loss": 3.5897668962893277,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 3,
+    "step": 24,
+    "training_loss": 3.5321748567664106,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 4,
+    "step": 32,
+    "training_loss": 3.46904472682787,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 5,
+    "step": 40,
+    "training_loss": 3.4181908317234204,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 6,
+    "step": 48,
+    "training_loss": 3.3852820811064346,
+    "supervised_tokens": 2944
+  },
+  {
+    "epoch": 7,
+    "step": 56,
+    "training_loss": 3.370174801867941,
+    "supervised_tokens": 2944
+  }
+]

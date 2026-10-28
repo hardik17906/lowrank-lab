@@ -1,0 +1,3 @@
+extends: pretrained_cpu.yaml
+method: baseline
+output_dir: results/baseline

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.ipynb text eol=lf
+# Preserve byte-level benchmark hashes across Windows/Linux checkouts.
+benchmarks/** -text linguist-generated=true
+configs/experiments/** linguist-generated=true
+reports/figures/** linguist-generated=true
+learning/CODE_REFERENCE.md linguist-generated=true

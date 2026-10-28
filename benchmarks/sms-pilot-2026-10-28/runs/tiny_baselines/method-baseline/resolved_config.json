@@ -1,0 +1,48 @@
+{
+  "seed": 7,
+  "cpu_threads": 4,
+  "method": "baseline",
+  "device": "cpu",
+  "output_dir": "results\\tiny_baselines\\method-baseline",
+  "model": {
+    "kind": "tiny",
+    "tiny": {
+      "vocab_size": 32,
+      "width": 48,
+      "heads": 4,
+      "layers": 2,
+      "max_length": 64,
+      "dropout": 0.0
+    },
+    "revision": "local"
+  },
+  "data": {
+    "split_seed": 42,
+    "max_length": 24,
+    "train_samples": 128,
+    "validation_samples": 32,
+    "test_samples": 32,
+    "fraction": 1.0
+  },
+  "adapter": {
+    "rank": 4,
+    "alpha": 8,
+    "targets": "attention",
+    "dropout": 0.0
+  },
+  "training": {
+    "max_steps": 60,
+    "batch_size": 8,
+    "gradient_accumulation": 2,
+    "learning_rate": 0.003,
+    "optimizer": "adamw",
+    "scheduler": "cosine",
+    "warmup_steps": 2,
+    "weight_decay": 0.0,
+    "max_grad_norm": 1.0,
+    "mixed_precision": "none",
+    "validation_interval": 10,
+    "early_stopping_patience": 0,
+    "use_best": false
+  }
+}

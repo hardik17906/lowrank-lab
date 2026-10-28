@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this implementation or its recorded study, please cite this repository and the original method papers."
+type: software
+title: "lowrank-lab: Inspectable LoRA, DoRA, and PiSSA in PyTorch"
+authors:
+  - name: "Hardik"
+    website: "https://github.com/hardik17906"
+repository-code: "https://github.com/hardik17906/lowrank-lab"
+url: "https://github.com/hardik17906/lowrank-lab"
+version: 0.1.0
+date-released: 2026-10-28
+license: MIT
+keywords:
+  - low-rank adaptation
+  - LoRA
+  - DoRA
+  - PiSSA
+  - reproducible research

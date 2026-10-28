@@ -1,0 +1,15 @@
+{
+  "dataset": "synthetic repeated-pair LM",
+  "purpose": "educational, not a pretrained benchmark",
+  "used_counts": {
+    "train": 128,
+    "validation": 32,
+    "test": 32
+  },
+  "encoded_splits_sha256": "bb364c7ce47f8531312a9e691969e102816a9c0d1bc17823db820c86ac668548",
+  "split_hashes": {
+    "train": "e04c358dfa783ebd6c7c5554f83ca9226baf5f25ca38a520ab311fb7ef1fe2da",
+    "validation": "5bfdb3fc0520fc47719437498e68424bdbc68df226282853e29022492659a78d",
+    "test": "0aa4c3fc2e14461c02cb9431380348068a4e0ce890bd2447b9d99c219c287c4b"
+  }
+}

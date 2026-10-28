@@ -1,0 +1,178 @@
+{
+  "status": "completed",
+  "method": "lora",
+  "seed": 7,
+  "model": {
+    "model_id": "HuggingFaceTB/SmolLM2-135M",
+    "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+    "dtype": "torch.float32",
+    "architecture": "LlamaForCausalLM"
+  },
+  "data": {
+    "dataset": "UCI SMS Spam Collection",
+    "source": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+    "license": "CC BY 4.0 (UCI dataset page)",
+    "doi": "10.24432/C5CC84",
+    "raw_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "raw_rows": 5574,
+    "removed_duplicate_or_conflicting_rows": 415,
+    "split_seed": 42,
+    "split_policy": "stratified 70/15/15 after normalization/deduplication",
+    "full_counts": {
+      "train": 3611,
+      "validation": 774,
+      "test": 774
+    },
+    "removed_token_prompt_collisions": {
+      "test": 0,
+      "validation": 0,
+      "train": 22
+    },
+    "used_counts": {
+      "test": 64,
+      "validation": 32,
+      "train": 32
+    },
+    "encoded_splits_sha256": "fd6f229c6cea842826616c42f5568ba0a9d00e4c5786911a1373f7b319bc911c",
+    "split_hashes": {
+      "test": "3748fc1cfe44ea187a0584b92662bee580485f837b11dac6c336dc503341d6b2",
+      "validation": "3c3b42537bbdf8852d5412b5e5cc4b2931900a6c168b179b3501fbe17410a270",
+      "train": "9a6f5d4bb35050f3baf148426dd67703338ca325b093420f751dfd2d59c2e672"
+    },
+    "class_counts": {
+      "test": [
+        56,
+        8
+      ],
+      "validation": [
+        26,
+        6
+      ],
+      "train": [
+        29,
+        3
+      ]
+    }
+  },
+  "initial_validation": {
+    "cross_entropy": 9.276212960481644,
+    "perplexity": 10680.906214737146,
+    "supervised_tokens": 32
+  },
+  "validation": {
+    "cross_entropy": 7.89792138338089,
+    "perplexity": 2691.6815353617335,
+    "supervised_tokens": 32,
+    "accuracy": 0.1875,
+    "macro_f1": 0.15789473684210525,
+    "confusion_matrix": [
+      [
+        0,
+        26
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "class_support": [
+      26,
+      6
+    ]
+  },
+  "test": {
+    "cross_entropy": 7.61796972155571,
+    "perplexity": 2034.4274797373944,
+    "supervised_tokens": 64,
+    "accuracy": 0.125,
+    "macro_f1": 0.1111111111111111,
+    "confusion_matrix": [
+      [
+        0,
+        56
+      ],
+      [
+        0,
+        8
+      ]
+    ],
+    "class_support": [
+      56,
+      8
+    ]
+  },
+  "training": {
+    "completed_steps": 12,
+    "completed_epochs": 1,
+    "training_seconds": 18.24620429999777,
+    "best_validation_loss": 7.89792138338089,
+    "peak_allocated_gpu_bytes": 1390999552,
+    "peak_sampled_cpu_rss_bytes": 2033262592
+  },
+  "parameters": {
+    "total_parameters": 134975808,
+    "trainable_parameters": 460800,
+    "trainable_fraction": 0.003413945112297457
+  },
+  "initialization_seconds": 2.3044591000034416,
+  "adapter": {
+    "rank": 4,
+    "alpha": 8,
+    "targets": "attention",
+    "dropout": 0.0
+  },
+  "run_config": {
+    "seed": 7,
+    "cpu_threads": 4,
+    "method": "lora",
+    "device": "cuda",
+    "output_dir": "results\\size\\method-lora_fraction-0.25",
+    "model": {
+      "kind": "pretrained",
+      "tiny": {
+        "vocab_size": 32,
+        "width": 48,
+        "heads": 4,
+        "layers": 2,
+        "max_length": 64,
+        "dropout": 0.0
+      },
+      "model_id": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "dtype": "float32",
+      "gradient_checkpointing": false,
+      "cache_dir": ".cache/huggingface"
+    },
+    "data": {
+      "split_seed": 42,
+      "max_length": 64,
+      "train_samples": 128,
+      "validation_samples": 32,
+      "test_samples": 64,
+      "fraction": 0.25,
+      "cache_dir": "data/raw"
+    },
+    "adapter": {
+      "rank": 4,
+      "alpha": 8,
+      "targets": "attention",
+      "dropout": 0.0
+    },
+    "training": {
+      "max_steps": 12,
+      "batch_size": 2,
+      "gradient_accumulation": 2,
+      "learning_rate": 0.0002,
+      "optimizer": "adamw",
+      "scheduler": "cosine",
+      "warmup_steps": 1,
+      "weight_decay": 0.0,
+      "max_grad_norm": 1.0,
+      "mixed_precision": "none",
+      "validation_interval": 6,
+      "early_stopping_patience": 0,
+      "use_best": false
+    }
+  },
+  "adapter_checkpoint_bytes": 1921134
+}

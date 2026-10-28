@@ -1,0 +1,27 @@
+[
+  {
+    "method": "baseline",
+    "metric_reproduction": "exact",
+    "peak_allocated_gpu_bytes": null
+  },
+  {
+    "method": "full",
+    "metric_reproduction": "exact",
+    "peak_allocated_gpu_bytes": 2800434688
+  },
+  {
+    "method": "lora",
+    "metric_reproduction": "exact",
+    "peak_allocated_gpu_bytes": 838039040
+  },
+  {
+    "method": "dora",
+    "metric_reproduction": "exact",
+    "peak_allocated_gpu_bytes": 1052190208
+  },
+  {
+    "method": "pissa",
+    "metric_reproduction": "exact",
+    "peak_allocated_gpu_bytes": 839882240
+  }
+]

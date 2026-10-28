@@ -1,0 +1,15 @@
+{
+  "stage": "placement",
+  "runs": [
+    "configs\\experiments\\placement\\00_method-lora_targets-attention.yaml",
+    "configs\\experiments\\placement\\01_method-lora_targets-ffn.yaml",
+    "configs\\experiments\\placement\\02_method-lora_targets-combined.yaml",
+    "configs\\experiments\\placement\\03_method-dora_targets-attention.yaml",
+    "configs\\experiments\\placement\\04_method-dora_targets-ffn.yaml",
+    "configs\\experiments\\placement\\05_method-dora_targets-combined.yaml",
+    "configs\\experiments\\placement\\06_method-pissa_targets-attention.yaml",
+    "configs\\experiments\\placement\\07_method-pissa_targets-ffn.yaml",
+    "configs\\experiments\\placement\\08_method-pissa_targets-combined.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

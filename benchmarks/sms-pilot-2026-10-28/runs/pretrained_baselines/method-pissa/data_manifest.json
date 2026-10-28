@@ -1,0 +1,46 @@
+{
+  "dataset": "UCI SMS Spam Collection",
+  "source": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+  "license": "CC BY 4.0 (UCI dataset page)",
+  "doi": "10.24432/C5CC84",
+  "raw_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "raw_rows": 5574,
+  "removed_duplicate_or_conflicting_rows": 415,
+  "split_seed": 42,
+  "split_policy": "stratified 70/15/15 after normalization/deduplication",
+  "full_counts": {
+    "train": 3611,
+    "validation": 774,
+    "test": 774
+  },
+  "removed_token_prompt_collisions": {
+    "test": 0,
+    "validation": 0,
+    "train": 22
+  },
+  "used_counts": {
+    "test": 64,
+    "validation": 32,
+    "train": 128
+  },
+  "encoded_splits_sha256": "7f93aa388ee8ffe7e8447491e91aedec77f0407cf2f7c9dff30bdf143574d6b3",
+  "split_hashes": {
+    "test": "3748fc1cfe44ea187a0584b92662bee580485f837b11dac6c336dc503341d6b2",
+    "validation": "3c3b42537bbdf8852d5412b5e5cc4b2931900a6c168b179b3501fbe17410a270",
+    "train": "ddb067b2f24377bbfd62138f5101563d09dc33645e6b1ef5ec3c7aa9932091e7"
+  },
+  "class_counts": {
+    "test": [
+      56,
+      8
+    ],
+    "validation": [
+      26,
+      6
+    ],
+    "train": [
+      116,
+      12
+    ]
+  }
+}

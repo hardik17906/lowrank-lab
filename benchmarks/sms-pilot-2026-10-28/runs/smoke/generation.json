@@ -1,0 +1,47 @@
+{
+  "purpose": "educational random-initialized model, not a pretrained benchmark",
+  "prefixes": [
+    [
+      1,
+      8,
+      9,
+      8
+    ],
+    [
+      1,
+      4,
+      12,
+      4
+    ]
+  ],
+  "greedy_sequences": [
+    [
+      1,
+      8,
+      9,
+      8,
+      9,
+      8,
+      13,
+      8,
+      13,
+      8,
+      13,
+      8
+    ],
+    [
+      1,
+      4,
+      12,
+      4,
+      14,
+      4,
+      14,
+      4,
+      14,
+      4,
+      14,
+      4
+    ]
+  ]
+}

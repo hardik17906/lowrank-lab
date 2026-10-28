@@ -1,0 +1,6 @@
+extends: pretrained_cpu.yaml
+method: pissa
+output_dir: results/pissa
+adapter:
+  svd: exact
+  svd_iterations: 4

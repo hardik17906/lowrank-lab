@@ -1,0 +1,12 @@
+{
+  "stage": "initialization",
+  "runs": [
+    "configs\\experiments\\initialization\\00_method-lora_init-kaiming.yaml",
+    "configs\\experiments\\initialization\\01_method-lora_init-gaussian.yaml",
+    "configs\\experiments\\initialization\\02_method-pissa_svd-exact.yaml",
+    "configs\\experiments\\initialization\\03_method-pissa_svd-fast.yaml",
+    "configs\\experiments\\initialization\\04_method-dora_detach_norm-True.yaml",
+    "configs\\experiments\\initialization\\05_method-dora_detach_norm-False.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

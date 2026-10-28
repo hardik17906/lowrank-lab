@@ -1,0 +1,115 @@
+{
+  "status": "completed",
+  "method": "lora",
+  "seed": 7,
+  "model": {
+    "model_id": "random-tiny-transformer",
+    "revision": "local",
+    "tiny": {
+      "vocab_size": 32,
+      "width": 48,
+      "heads": 4,
+      "layers": 2,
+      "max_length": 64,
+      "dropout": 0.0
+    }
+  },
+  "data": {
+    "dataset": "synthetic repeated-pair LM",
+    "purpose": "educational, not a pretrained benchmark",
+    "used_counts": {
+      "train": 128,
+      "validation": 32,
+      "test": 32
+    },
+    "encoded_splits_sha256": "bb364c7ce47f8531312a9e691969e102816a9c0d1bc17823db820c86ac668548",
+    "split_hashes": {
+      "train": "e04c358dfa783ebd6c7c5554f83ca9226baf5f25ca38a520ab311fb7ef1fe2da",
+      "validation": "5bfdb3fc0520fc47719437498e68424bdbc68df226282853e29022492659a78d",
+      "test": "0aa4c3fc2e14461c02cb9431380348068a4e0ce890bd2447b9d99c219c287c4b"
+    }
+  },
+  "initial_validation": {
+    "cross_entropy": 3.58978619782821,
+    "perplexity": 36.22632983044617,
+    "supervised_tokens": 736
+  },
+  "validation": {
+    "cross_entropy": 3.3750859965448794,
+    "perplexity": 29.226797076732517,
+    "supervised_tokens": 736
+  },
+  "test": {
+    "cross_entropy": 3.5446242456850796,
+    "perplexity": 34.62667177613094,
+    "supervised_tokens": 736
+  },
+  "training": {
+    "completed_steps": 60,
+    "completed_epochs": 7,
+    "training_seconds": 0.9286164999994071,
+    "best_validation_loss": 3.3750859965448794,
+    "peak_allocated_gpu_bytes": null,
+    "peak_sampled_cpu_rss_bytes": 415412224
+  },
+  "parameters": {
+    "total_parameters": 65856,
+    "trainable_parameters": 3072,
+    "trainable_fraction": 0.04664723032069971
+  },
+  "initialization_seconds": 0.09497609999925771,
+  "adapter": {
+    "rank": 4,
+    "alpha": 8,
+    "targets": "attention",
+    "dropout": 0.0
+  },
+  "run_config": {
+    "seed": 7,
+    "cpu_threads": 4,
+    "method": "lora",
+    "device": "cpu",
+    "output_dir": "results\\tiny_baselines\\method-lora",
+    "model": {
+      "kind": "tiny",
+      "tiny": {
+        "vocab_size": 32,
+        "width": 48,
+        "heads": 4,
+        "layers": 2,
+        "max_length": 64,
+        "dropout": 0.0
+      }
+    },
+    "data": {
+      "split_seed": 42,
+      "max_length": 24,
+      "train_samples": 128,
+      "validation_samples": 32,
+      "test_samples": 32,
+      "fraction": 1.0
+    },
+    "adapter": {
+      "rank": 4,
+      "alpha": 8,
+      "targets": "attention",
+      "dropout": 0.0
+    },
+    "training": {
+      "max_steps": 60,
+      "batch_size": 8,
+      "gradient_accumulation": 2,
+      "learning_rate": 0.003,
+      "optimizer": "adamw",
+      "scheduler": "cosine",
+      "warmup_steps": 2,
+      "weight_decay": 0.0,
+      "max_grad_norm": 1.0,
+      "mixed_precision": "none",
+      "validation_interval": 10,
+      "early_stopping_patience": 0,
+      "use_best": false
+    }
+  },
+  "adapter_checkpoint_bytes": 18613
+}

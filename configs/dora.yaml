@@ -1,0 +1,5 @@
+extends: pretrained_cpu.yaml
+method: dora
+output_dir: results/dora
+adapter:
+  detach_norm: true

@@ -1,0 +1,26 @@
+[
+  {
+    "method": "full",
+    "test_ce_original": 0.36963456287048757,
+    "test_ce_loaded": 0.36963456287048757,
+    "status": "passed"
+  },
+  {
+    "method": "lora",
+    "test_ce_original": 7.6169203966856,
+    "test_ce_loaded": 7.6169203966856,
+    "status": "passed"
+  },
+  {
+    "method": "dora",
+    "test_ce_original": 7.374322801828384,
+    "test_ce_loaded": 7.374322801828384,
+    "status": "passed"
+  },
+  {
+    "method": "pissa",
+    "test_ce_original": 0.9972259839996696,
+    "test_ce_loaded": 0.9972259839996696,
+    "status": "passed"
+  }
+]

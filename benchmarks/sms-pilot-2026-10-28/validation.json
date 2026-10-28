@@ -1,0 +1,8 @@
+{
+  "tests": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 10.564,
+  "scope": "Recorded Windows CUDA environment, including PEFT reference checks"
+}

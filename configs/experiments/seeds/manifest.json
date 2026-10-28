@@ -1,0 +1,18 @@
+{
+  "stage": "seeds",
+  "runs": [
+    "configs\\experiments\\seeds\\00_method-full_seed-7.yaml",
+    "configs\\experiments\\seeds\\01_method-full_seed-17.yaml",
+    "configs\\experiments\\seeds\\02_method-full_seed-27.yaml",
+    "configs\\experiments\\seeds\\03_method-lora_seed-7.yaml",
+    "configs\\experiments\\seeds\\04_method-lora_seed-17.yaml",
+    "configs\\experiments\\seeds\\05_method-lora_seed-27.yaml",
+    "configs\\experiments\\seeds\\06_method-dora_seed-7.yaml",
+    "configs\\experiments\\seeds\\07_method-dora_seed-17.yaml",
+    "configs\\experiments\\seeds\\08_method-dora_seed-27.yaml",
+    "configs\\experiments\\seeds\\09_method-pissa_seed-7.yaml",
+    "configs\\experiments\\seeds\\10_method-pissa_seed-17.yaml",
+    "configs\\experiments\\seeds\\11_method-pissa_seed-27.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

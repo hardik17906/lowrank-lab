@@ -1,0 +1,12 @@
+torch>=2.4
+numpy>=1.26
+PyYAML>=6
+psutil>=5
+transformers>=4.46,<5
+huggingface-hub>=0.26,<1
+safetensors>=0.4
+scikit-learn>=1.4
+pandas>=2
+matplotlib>=3.8
+pytest>=8
+requests>=2.31

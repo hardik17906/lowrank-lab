@@ -1,0 +1,3 @@
+extends: pretrained_cpu.yaml
+method: lora
+output_dir: results/lora

@@ -1,0 +1,8 @@
+[
+  {
+    "epoch": 1,
+    "step": 8,
+    "training_loss": 9.034788697957993,
+    "supervised_tokens": 32
+  }
+]

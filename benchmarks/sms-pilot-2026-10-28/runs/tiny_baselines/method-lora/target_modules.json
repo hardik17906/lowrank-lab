@@ -1,0 +1,10 @@
+[
+  "blocks.0.attention.q_proj",
+  "blocks.0.attention.k_proj",
+  "blocks.0.attention.v_proj",
+  "blocks.0.attention.o_proj",
+  "blocks.1.attention.q_proj",
+  "blocks.1.attention.k_proj",
+  "blocks.1.attention.v_proj",
+  "blocks.1.attention.o_proj"
+]

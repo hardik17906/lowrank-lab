@@ -1,0 +1,11 @@
+{
+  "stage": "baselines",
+  "runs": [
+    "configs\\experiments\\tiny_baselines\\00_method-baseline.yaml",
+    "configs\\experiments\\tiny_baselines\\01_method-full.yaml",
+    "configs\\experiments\\tiny_baselines\\02_method-lora.yaml",
+    "configs\\experiments\\tiny_baselines\\03_method-dora.yaml",
+    "configs\\experiments\\tiny_baselines\\04_method-pissa.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

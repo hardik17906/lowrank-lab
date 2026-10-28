@@ -1,0 +1,3 @@
+extends: pretrained_cpu.yaml
+method: full
+output_dir: results/full_finetune

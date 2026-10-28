@@ -1,0 +1,6 @@
+extends: pretrained_cpu.yaml
+device: cuda
+method: lora
+output_dir: results/pretrained_gpu
+training:
+  mixed_precision: none

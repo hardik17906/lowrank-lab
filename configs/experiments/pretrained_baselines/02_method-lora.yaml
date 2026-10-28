@@ -1,0 +1,46 @@
+seed: 7
+cpu_threads: 4
+method: lora
+device: cuda
+output_dir: results\pretrained_baselines\method-lora
+model:
+  kind: pretrained
+  tiny:
+    vocab_size: 32
+    width: 48
+    heads: 4
+    layers: 2
+    max_length: 64
+    dropout: 0.0
+  model_id: HuggingFaceTB/SmolLM2-135M
+  revision: 93efa2f097d58c2a74874c7e644dbc9b0cee75a2
+  dtype: float32
+  gradient_checkpointing: false
+  cache_dir: .cache/huggingface
+data:
+  split_seed: 42
+  max_length: 64
+  train_samples: 128
+  validation_samples: 32
+  test_samples: 64
+  fraction: 1.0
+  cache_dir: data/raw
+adapter:
+  rank: 4
+  alpha: 8
+  targets: attention
+  dropout: 0.0
+training:
+  max_steps: 12
+  batch_size: 2
+  gradient_accumulation: 2
+  learning_rate: 0.0002
+  optimizer: adamw
+  scheduler: cosine
+  warmup_steps: 1
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  mixed_precision: none
+  validation_interval: 6
+  early_stopping_patience: 0
+  use_best: false

@@ -1,0 +1,25 @@
+{
+  "runs": [
+    "configs\\experiments\\pretrained_baselines\\00_method-baseline.yaml",
+    "configs\\experiments\\pretrained_baselines\\01_method-full.yaml",
+    "configs\\experiments\\pretrained_baselines\\02_method-lora.yaml",
+    "configs\\experiments\\pretrained_baselines\\03_method-dora.yaml",
+    "configs\\experiments\\pretrained_baselines\\04_method-pissa.yaml",
+    "configs\\experiments\\rank\\01_method-lora_rank-8.yaml",
+    "configs\\experiments\\rank\\02_method-lora_rank-16.yaml",
+    "configs\\experiments\\rank\\03_method-lora_rank-32.yaml",
+    "configs\\experiments\\placement\\01_method-lora_targets-ffn.yaml",
+    "configs\\experiments\\placement\\02_method-lora_targets-combined.yaml",
+    "configs\\experiments\\size\\00_method-lora_fraction-0.1.yaml",
+    "configs\\experiments\\size\\01_method-lora_fraction-0.25.yaml",
+    "configs\\experiments\\size\\02_method-lora_fraction-0.5.yaml",
+    "configs\\experiments\\initialization\\01_method-lora_init-gaussian.yaml",
+    "configs\\experiments\\initialization\\03_method-pissa_svd-fast.yaml",
+    "configs\\experiments\\initialization\\05_method-dora_detach_norm-False.yaml",
+    "configs\\experiments\\seeds\\04_method-lora_seed-17.yaml",
+    "configs\\experiments\\seeds\\05_method-lora_seed-27.yaml",
+    "configs\\experiments\\seeds\\10_method-pissa_seed-17.yaml",
+    "configs\\experiments\\seeds\\11_method-pissa_seed-27.yaml"
+  ],
+  "design": "staged matched-12-step pretrained pilot"
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "epoch": 1,
+    "step": 3,
+    "training_loss": 9.922261397043863,
+    "supervised_tokens": 12
+  },
+  {
+    "epoch": 2,
+    "step": 6,
+    "training_loss": 9.215742905934652,
+    "supervised_tokens": 12
+  },
+  {
+    "epoch": 3,
+    "step": 9,
+    "training_loss": 8.607496420542398,
+    "supervised_tokens": 12
+  },
+  {
+    "epoch": 4,
+    "step": 12,
+    "training_loss": 8.331186135609945,
+    "supervised_tokens": 12
+  }
+]

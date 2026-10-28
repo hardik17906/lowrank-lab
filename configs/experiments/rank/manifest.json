@@ -1,0 +1,18 @@
+{
+  "stage": "rank",
+  "runs": [
+    "configs\\experiments\\rank\\00_method-lora_rank-4.yaml",
+    "configs\\experiments\\rank\\01_method-lora_rank-8.yaml",
+    "configs\\experiments\\rank\\02_method-lora_rank-16.yaml",
+    "configs\\experiments\\rank\\03_method-lora_rank-32.yaml",
+    "configs\\experiments\\rank\\04_method-dora_rank-4.yaml",
+    "configs\\experiments\\rank\\05_method-dora_rank-8.yaml",
+    "configs\\experiments\\rank\\06_method-dora_rank-16.yaml",
+    "configs\\experiments\\rank\\07_method-dora_rank-32.yaml",
+    "configs\\experiments\\rank\\08_method-pissa_rank-4.yaml",
+    "configs\\experiments\\rank\\09_method-pissa_rank-8.yaml",
+    "configs\\experiments\\rank\\10_method-pissa_rank-16.yaml",
+    "configs\\experiments\\rank\\11_method-pissa_rank-32.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

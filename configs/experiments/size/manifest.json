@@ -1,0 +1,18 @@
+{
+  "stage": "size",
+  "runs": [
+    "configs\\experiments\\size\\00_method-lora_fraction-0.1.yaml",
+    "configs\\experiments\\size\\01_method-lora_fraction-0.25.yaml",
+    "configs\\experiments\\size\\02_method-lora_fraction-0.5.yaml",
+    "configs\\experiments\\size\\03_method-lora_fraction-1.0.yaml",
+    "configs\\experiments\\size\\04_method-dora_fraction-0.1.yaml",
+    "configs\\experiments\\size\\05_method-dora_fraction-0.25.yaml",
+    "configs\\experiments\\size\\06_method-dora_fraction-0.5.yaml",
+    "configs\\experiments\\size\\07_method-dora_fraction-1.0.yaml",
+    "configs\\experiments\\size\\08_method-pissa_fraction-0.1.yaml",
+    "configs\\experiments\\size\\09_method-pissa_fraction-0.25.yaml",
+    "configs\\experiments\\size\\10_method-pissa_fraction-0.5.yaml",
+    "configs\\experiments\\size\\11_method-pissa_fraction-1.0.yaml"
+  ],
+  "fairness": "matched optimizer steps; alpha fixed across ranks; NOT matched wall time or parameters"
+}

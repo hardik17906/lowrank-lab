@@ -1,0 +1,11 @@
+extends: limited_gpu.yaml
+output_dir: results/larger_gpu
+model:
+  model_id: Qwen/Qwen2.5-1.5B
+  revision: main
+data:
+  max_length: 256
+training:
+  batch_size: 2
+  gradient_accumulation: 8
+  mixed_precision: bf16

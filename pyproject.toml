@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lowrank-lab"
+version = "0.1.0"
+description = "Inspectable LoRA, DoRA and PiSSA research laboratory"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Hardik"}]
+keywords = ["lora", "dora", "pissa", "pytorch", "fine-tuning", "reproducibility"]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.4", "numpy>=1.26", "PyYAML>=6", "psutil>=5", "transformers>=4.46,<5", "huggingface-hub>=0.26,<1", "safetensors>=0.4", "scikit-learn>=1.4", "pandas>=2", "matplotlib>=3.8", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.9,<1", "build>=1.2"]
+reference = ["peft==0.21.2", "accelerate==1.15.0"]
+
+[project.urls]
+Repository = "https://github.com/hardik17906/lowrank-lab"
+Issues = "https://github.com/hardik17906/lowrank-lab/issues"
+Documentation = "https://github.com/hardik17906/lowrank-lab/blob/main/reports/REPRODUCTION_GUIDE.md"
+
+[project.scripts]
+lowrank-lab = "lowrank_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/lowrank_lab/experiments/analysis.py" = ["E402"]
